@@ -10,7 +10,7 @@ public class Main {
         int fibNum = 1, first = 0, second = 1;
 
         for(int i = 0; i < range; i++){
-            System.out.println(fibNum);
+            System.out.println((i + 1) + " число Фибоначчи: " + fibNum);
 
             fibNum = first + second;
             first = second;
