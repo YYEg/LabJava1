@@ -5,11 +5,13 @@ public class Main {
     public static void doTaskOne(){
         System.out.println("Введите желаемый номер чесла Фибоначчи:");
         Scanner in = new Scanner(System.in);
+
         int range = in.nextInt();
         int fibNum = 1, first = 0, second = 1;
 
         for(int i = 0; i < range; i++){
             System.out.println(fibNum);
+
             fibNum = first + second;
             first = second;
             second = fibNum;
@@ -63,7 +65,6 @@ public class Main {
         final String[] hundreds = { "тысяча", "сто", "двести", "триста", "четыреста", "пятьсот", "шестьсот", "семьсот", "восемьсот", "девятьсот"};
 
         Scanner in = new Scanner(System.in);
-
         System.out.println("Введите число, которое хотите вывести в текстовом формате(<1000):");
 
         int startNumber = in.nextInt();
