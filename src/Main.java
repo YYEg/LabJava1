@@ -87,6 +87,7 @@ public class Main {
                 text = text + " " + tens[mid];
             if (low != 0)
                 text = text + " " + belowTwenty[low];
+
             System.out.println(text);
         }
     }
@@ -115,5 +116,7 @@ public class Main {
                 break;
             }
         }
+
+        in.close();
     }
 }
